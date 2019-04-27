@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notifly - Enviar Mensagens</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="#"><i class="fas fa-fighter-jet icone"></i>Notifly</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav cem">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="historico.html"><i class="fas fa-history" aria-hidden="true"></i> Histórico de Mensagens<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="send.html"><i class="fas fa-paper-plane    "></i> Enviar Mensagens<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link right" href="index.html"><i class="fas fa-power-off"></i>Logout<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+
+            <div class="col-lg-10">
+                <div class="row header">
+                    <div class="col-md-12">
+                        <h3><i class="far fa-paper-plane"></i>Enviar Mensagem</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="frmAssunto">Assunto</label>
+                                <input type="text" class="form-control" id="frmAssunto" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="frmDescricao">Descrição</label>
+                                <input type="text" class="form-control" id="frmDescricao" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="frmCurso">Curso</label>
+                                <select class="form-control" id="frmCurso">
+                                    <option>Análise e desenvolvimento de Sistemas</option>
+                                    <option>Projetos Mecânicos</option>
+                                    <option>Mecatrônica Industrial</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="frmTurno">Turno</label>
+                                <select class="form-control" id="frmTurno">
+                                    <option>Manhã</option>
+                                    <option>Tarde</option>
+                                    <option>Noite</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="envio()">Enviar Mensagem</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
